@@ -5,7 +5,7 @@ import {words} from './assets/words';
 function App() {
   return (
     <div className="App">
-      Generator
+      Generate:
       <Generator dataset={words}/>
     </div>
   );
