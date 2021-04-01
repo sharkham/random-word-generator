@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 
 const Generator = ({ dataset }) => {
 
-  const [word, setWord] = useState("Click to generate a word!")
-
   const generate = () => {
     return dataset[Math.floor(Math.random() * dataset.length)];
   }
+
+  const [word, setWord] = useState(() => generate())
+
 
   const handleClick = () => {
     setWord(generate())
