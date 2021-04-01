@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Generator = ({ dataset }) => {
+
+  const [prompt, setPrompt] = useState("Click to generate a Pokémon!")
 
   const generate = () => {
     let randomWord = dataset[Math.floor(Math.random() * dataset.length)]
