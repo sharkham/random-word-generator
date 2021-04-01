@@ -2,18 +2,20 @@ import React, { useState } from 'react';
 
 const Generator = ({ dataset }) => {
 
-  const [word, setWord] = useState("Click to generate a Pokémon!")
+  const [word, setWord] = useState("Click to generate a word!")
 
   const generate = () => {
-    let randomWord = dataset[Math.floor(Math.random() * dataset.length)]
-    console.log(randomWord);
-    return randomWord;
+    return dataset[Math.floor(Math.random() * dataset.length)];
+  }
+
+  const handleClick = () => {
+    setWord(generate())
   }
 
   return (
     <div>
-      <p>Randomly generated word goes here.</p>
-      <button onClick={ generate }>Generate</button>
+      <p>{word}</p>
+      <button onClick={ handleClick }>Generate</button>
     </div>
   );
 }
