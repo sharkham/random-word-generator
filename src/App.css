@@ -9,7 +9,7 @@ body {
   font-weight: bold;
 } */
 
-p {
+.generated-word {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0 10%;

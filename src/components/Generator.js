@@ -15,7 +15,7 @@ const Generator = ({ dataset }) => {
 
   return (
     <div>
-      <p>{word}</p>
+      <p className="generated-word">{word}</p>
       <button onClick={ handleClick }>Generate</button>
     </div>
   );
