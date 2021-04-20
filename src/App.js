@@ -5,7 +5,7 @@ import {words} from './assets/words';
 function App() {
   return (
     <div className="App">
-      Generate:
+      <h1>Random Word Generator</h1>
       <Generator dataset={words}/>
     </div>
   );
