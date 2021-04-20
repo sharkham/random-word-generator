@@ -1,5 +1,6 @@
 body {
   font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   background-color: #dcf923;
 }
@@ -11,7 +12,6 @@ button {
   background-color: #dcf923;
   color: #000000;
   font-size: 1em;
-  font-family: Arial, Helvetica, sans-serif;
   padding: 5px 20px;
   transition: all 0.3s ease;
   outline: none;
